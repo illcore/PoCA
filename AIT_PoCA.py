@@ -35,7 +35,7 @@ with open("my_angles.txt", "w") as f:
             
             # Calculate scattering angle
             angle = math.acos(np.clip(np.dot(vec1, vec2) / quotient, -1.0, 1.0))
-            angle = angle * 1000  # Convert to milli-radians
+            angle = angle * 1000  # Convert to mrad
             
             # Calculate PoCA point
             A1, A2 = np.array([xcor[x], ycor[x], zcor[x]]), np.array([xcor[x + 1], ycor[x + 1], zcor[x + 1]])
